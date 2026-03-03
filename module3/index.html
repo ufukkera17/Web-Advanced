@@ -2,17 +2,27 @@
 <html>
     <head>
         <title>Tables and lists</title>
+
+        <style>
+            table,td,tr{
+                border: 1px solid;
+                border-collapse: collapse;
+            }
+        </style>
     </head>
     
     <body>
         <table>
+            <thead>
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Age</th>
                 <th>Email</th>
             </tr>
+            </thead>
 
+            <tbody>
             <tr>
                 <td>Drin</td>
                 <td>Krasniqi</td>
@@ -40,6 +50,104 @@
                 <td>29</td>
                 <td>milot07@gmail.com</td>
             </tr>
+        </tbody>
+
+        <tfoot>
+            <td colspan="4">Table Footer</td>
+        </tfoot>
         </table>
+
+        <br>
+        <hr>
+
+        <table>
+            <tr>
+                <th>Name:</th>
+                <td>Albin Kurti</td>
+                <td>Hashim Thaqi</td>
+            </tr>
+
+            <tr>
+                <th rowspan="2">Email</th>
+                <td>albinbaba@gmail.com</td>
+                <td rowspan="2">hashishthaqi@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>albinbaba01@hotmail.com</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <ul>
+            <li>FC Vushtrria</li>
+            <li>FC Liria</li>
+            <li>KF Trepca</li>
+            <li>KF Prishtina</li>
+        </ul>
+
+        <ol>
+            <li>FORCA</li>
+            <li>ARPAGJIKT</li>
+            <li>TORCIDA</li>
+            <li>PLISAT</li>
+        </ol>
+
+        <dl>
+            <dt>Hamburger</dt>
+            <dd>Bread,patty,salat,tomato,sauces</dd>
+            <dt>Pizza</dt>
+            <dd>Dough,cheese,tomato sauce,mushrooms</dd>
+            <dt>Sandwich</dt>
+            <dd>Bread,cheese,ham.tomatoes,iceberg salad</dd>
+        </dl>
+
+        <hr>
+
+          <ul type="circle">
+            <li>FC Vushtrria</li>
+            <li>FC Liria</li>
+            <li>KF Trepca</li>
+            <li>KF Prishtina</li>
+        </ul>
+
+          <ul type="square">
+            <li>FC Vushtrria</li>
+            <li>FC Liria</li>
+            <li>KF Trepca</li>
+            <li>KF Prishtina</li>
+        </ul>
+
+          <ul type="none">
+            <li>FC Vushtrria</li>
+            <li>FC Liria</li>
+            <li>KF Trepca</li>
+            <li>KF Prishtina</li>
+        </ul>
+
+        <hr>
+
+
+        <ol type="A">
+            <li>FORCA</li>
+            <li>ARPAGJIKT</li>
+            <li>TORCIDA</li>
+            <li>PLISAT</li>
+        </ol>
+
+        <ol type="I">
+            <li>FORCA</li>
+            <li>ARPAGJIKT</li>
+            <li>TORCIDA</li>
+            <li>PLISAT</li>
+        </ol>
+
+        <ol type="i">
+            <li>FORCA</li>
+            <li>ARPAGJIKT</li>
+            <li>TORCIDA</li>
+            <li>PLISAT</li>
+        </ol>
     </body>
 </html>
