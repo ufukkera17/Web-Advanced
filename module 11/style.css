@@ -1,0 +1,38 @@
+ul {
+    list-style-type: square;
+    background-color: cadetblue;
+    color: black;
+    padding: 20px;
+    margin: 20px;
+}
+
+ol {
+    list-style-type: lower-greek;
+    padding: 5%;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td,th {
+    border: 1px solid #eee;
+    padding: 15px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: blue;
+    color: #eee;
+
+}
+
+tbody tr:nth-child(even){
+    background-color: brown;
+    color: #eee;
+}
+
+table {
+    
+}
