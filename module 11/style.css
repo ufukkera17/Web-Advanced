@@ -22,17 +22,10 @@ td,th {
     padding: 15px;
 }
 
-tbody tr:nth-child(odd){
-    background-color: blue;
-    color: #eee;
 
-}
 
-tbody tr:nth-child(even){
-    background-color: brown;
-    color: #eee;
-}
-
-table {
-    
+.pl-table {
+    max-height: 300px; 
+  overflow: auto;    
+  border: 1px solid #ccc;
 }
