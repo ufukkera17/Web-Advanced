@@ -1,0 +1,158 @@
+:root {
+    --primary: #00c853;
+    --dark: #111;
+    --light: #f5f5f5;
+    --gray: #777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #111 ,#222);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--dark);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: var(--primary);
+}
+
+.page-title {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.page-title h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    font-size: 18px;
+    color: lightgray;
+}
+
+/* MUSCLE SECTIONS */
+
+.muscle-group {
+    padding: 50px 30px;
+}
+
+.muscle-group h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #00c853;
+}
+
+/* EXERCISE CONTAINER */
+
+.exercise-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* EXERCISE CARD */
+
+.exercise-card {
+    width: 320px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.exercise-card:hover {
+    transform: translateY(-5px);
+}
+
+.exercise-card img {
+    width: 100%;
+    height: 220px;
+}
+
+.exercise-card h3 {
+    text-align: center;
+    padding: 15px 10px 5px;
+}
+
+.exercise-card p {
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.exercise-card h4 {
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.exercise-card ol {
+    padding-left: 35px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.exercise-card li {
+    margin-bottom: 8px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .page-title h1 {
+        font-size: 35px;
+    }
+
+    .exercise-card {
+        width: 90%;
+    }
+
+    .muscle-group {
+        padding: 30px 15px;
+    }
+}
