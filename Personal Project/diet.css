@@ -1,0 +1,163 @@
+:root {
+    --primary: #00c853;
+    --dark: #111;
+    --light: #f5f5f5;
+    --gray: #777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #111 ,#222);
+    color: var(--dark);
+}
+
+h2{
+    color: #00c853;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--dark);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo{
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: var(--primary);
+}
+
+.diet-hero{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.diet-hero h1{
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.diet-hero p{
+    font-size: 18px;
+    color: lightgray;
+}
+
+.diet-section{
+    padding: 60px 20px;
+    background: linear-gradient(to right, #111 ,#222);
+}
+
+.diet-section h2{
+    text-align: center;
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 30px;
+}
+
+.diet-card {
+    width: 850px;
+    max-width: 95%;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+
+}
+
+.diet-card img {
+    width: 100%;
+    height: 350px;
+}
+
+.diet-card h3{
+    text-align: center;
+    margin: 25px 0;
+    font-size: 24px;
+}
+
+.diet-card ul{
+    padding: 0 50px 35px;
+}
+
+.diet-card li {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.healthy-foods{
+    padding: 60px 20px;
+    
+}
+
+.healthy-foods h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.food-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.food-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.food-card:hover{
+    transform: scale(1.04);
+}
+
+.food-card img{
+    width: 100%;
+    height: 180px;
+}
+
+.food-card h3{
+    padding: 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
