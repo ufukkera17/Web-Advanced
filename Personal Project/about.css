@@ -177,22 +177,3 @@ footer{
 }
 
 
-@media (max-width: 768px) {
-
-    .about-hero p {
-        width: 95%;
-    }
-
-    .about-section p {
-        width: 95%;
-    }
-
-    .about-hero h1 {
-        font-size: 35px;
-    }
-
-    .reason-card,
-    .team-member {
-        width: 90%;
-    }
-}
